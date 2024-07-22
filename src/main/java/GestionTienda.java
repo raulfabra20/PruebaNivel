@@ -186,7 +186,7 @@ public class GestionTienda {
     public static byte pedirTipoProducto() {
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Qué tipo de producto deseas añadir? (1. Ropa, 2. Electrodomestico, " +
+        System.out.println("Qué tipo de producto deseas añadir? (1. Ropa, 2. Electrodoméstico, " +
                 "3. Componente Electrónico, 4. Belleza) :");
         byte opcion = sc.nextByte();
         return opcion;
@@ -365,9 +365,7 @@ public class GestionTienda {
         }
     }
 
-    public static void mostrarProductosRebajados(ArrayList<Producto> productos){
-        productos.stream().filter(p -> p.getPorcentajeRebaja() > 0)
-                .forEach(p -> System.out.println(p.getNombre() + " - " + p.getPrecio()+" €."));
+    public static void mostrarProductosRebajados(ArrayList<Producto> productos) {
     }
 
     public static void mostrarStock(ArrayList<Producto> productos){
